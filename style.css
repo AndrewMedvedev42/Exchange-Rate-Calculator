@@ -1,0 +1,87 @@
+:root{
+    --primary-color: rgb(228, 175, 46);
+    --second-color: hsl(0, 0%, 54%);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.money-img{
+    width: 100px;
+    height: auto;
+    margin: 20px;
+    
+}
+
+h1{
+    color: var(--primary-color);
+    letter-spacing: 2px;
+    margin: 2px;
+}
+
+p{
+    color: rgb(121, 121, 121);
+    font-size: 20px;
+    font-weight: bolder; 
+    color: var(--second-color);
+    font-family: arial;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.currency select ,input, .btn{
+    margin: 10px;
+    padding: 15px 25px;
+}
+
+
+.currency select ,input{
+    border-radius: 10px;
+    border:solid grey 3px;
+}
+
+.btn{
+    letter-spacing: 3px;
+    color: white;
+    font-size: 17px;
+    font-weight: bolder;
+    border-radius: 20px;
+    border: none;
+    background-image: linear-gradient(rgb(247, 203, 30), rgb(206, 153, 41));
+    transition: 0.5s;
+}
+
+.btn:hover{
+    background: rgb(206, 153, 41);
+}
+
+.btn:active{
+    background: rgb(173, 123, 16);
+}
+
+.rate{
+    margin: 10px;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.swap-rate-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
