@@ -1,6 +1,5 @@
 :root{
     --primary-color: rgb(228, 175, 46);
-    --second-color: hsl(0, 0%, 54%);
 }
 
 *{
@@ -14,6 +13,7 @@ body{
     justify-content: center;
     height: 100vh;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: rgb(255, 244, 219);
 }
 
 .money-img{
@@ -30,10 +30,8 @@ h1{
 }
 
 p{
-    color: rgb(121, 121, 121);
     font-size: 20px;
     font-weight: bolder; 
-    color: var(--second-color);
     font-family: arial;
 }
 
@@ -50,8 +48,8 @@ p{
 
 
 .currency select ,input{
-    border-radius: 10px;
-    border:solid grey 3px;
+    border-radius: 25px;
+    border: none;
 }
 
 .btn{
@@ -63,6 +61,7 @@ p{
     border: none;
     background-image: linear-gradient(rgb(247, 203, 30), rgb(206, 153, 41));
     transition: 0.5s;
+    outline: none;
 }
 
 .btn:hover{
@@ -80,6 +79,7 @@ p{
 }
 
 .swap-rate-container{
+    color: grey;
     width: 100%;
     display: flex;
     align-items: center;
